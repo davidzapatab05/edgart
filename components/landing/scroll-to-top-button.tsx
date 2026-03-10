@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
@@ -23,7 +23,17 @@ export function ScrollToTopButton() {
   }, []);
 
   const handleScrollToTop = () => {
+    // Main window scroll
     window.scrollTo({ top: 0, behavior: "smooth" });
+    
+    // Fallbacks for mobile browsers (iOS/Android) where the documentElement 
+    // or body might be the actual scroll container due to CSS overflow rules
+    try {
+      document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      document.body.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (e) {
+      // Ignore errors in older browsers
+    }
   };
 
   return (
