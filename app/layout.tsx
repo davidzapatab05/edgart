@@ -97,6 +97,9 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
+  verification: {
+    google: "G1oKjRa4UD5EXuvruOJTJxoKUAqhijjc-j8ZJsgTE6s",
+  },
 };
 
 export const viewport: Viewport = {
