@@ -39,7 +39,8 @@ export const artistInfo = {
   signatureImage: "/logo.png",
   origin: "Piura, Huancabamba - Perú",
   whatsappNumber: "+51 930 141 543",
-  whatsappMessage: "Hola Edgar, vi tu trabajo artístico y me gustaría recibir una propuesta para mi obra.",
+  whatsappMessage:
+    "Hola Edgar, quisiera cotizar una obra contigo (mural, dibujo, pintura o personalizada). ¿Me compartes información, tiempos y precio?",
   email: "edgartmauriola@gmail.com",
 };
 
